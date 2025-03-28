@@ -1,0 +1,42 @@
+﻿<Window x:Class="Schedule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Schedule"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <!-- Background Image -->
+            <Image Source="background.jpeg"
+           Stretch="Fill" Margin="0,0,-416,-312"/>
+
+            <!-- Other Content -->
+            <!--Canvas Margin="81,118,-81,-118">
+                <Image x:Name="image1" Source="image1.png" Width="425" Height="443" Canvas.Left="310" Canvas.Top="-111"/>
+            </Canvas -->
+        </Grid>
+
+        <!-- create button to search -->
+        <!-- button section_code -->
+        <Button x:Name="button1" Content="Section code ( vd: MI1100 )" Width="200" Height="50" RenderTransformOrigin="0.771,1.324" Margin="100,25,100,20" Grid.Column="1" Click="button_Click"/>
+        <!-- button position -->
+        <Button x:Name="button2" Content="Position (vd : D3 201)" Width="200" Height="50" RenderTransformOrigin="0.771,1.324" Margin="100,25,100,20" Click="button_Click"/>
+        <!-- button number_of_credit -->
+        <Button x:Name="button3" Content="The number of credit (vd : 2TC )" Width="200" Height="50" RenderTransformOrigin="0.771,1.324" Margin="300,0,300,43" Grid.ColumnSpan="2" Grid.Row="1" Click="button_Click"/>
+
+
+
+    </Grid>
+</Window>
